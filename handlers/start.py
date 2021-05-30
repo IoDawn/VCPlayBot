@@ -49,7 +49,7 @@ async def start_(client: Client, message: Message):
 )
 async def start(client: Client, message: Message):
     await message.reply_text(
-        "💁🏻‍♂️ Do you want to search for a YouTube video?",
+        "Apakah kamu ingin mencari video dari YouTube?",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -96,8 +96,8 @@ async def help(client: Client, message: Message):
 /resume - suruh Roso lanjut nyanyi
 /skip - memutar lagu berikutnya
 /end - suruh Roso berhenti bernyanyi
-/userbotjoin - invite assistant to your chat
-/admincache - Refresh admin list
+/userbotjoin - undang assisten Roso untuk memutar musik
+/admincache - Perbarui daftar admin
  </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
