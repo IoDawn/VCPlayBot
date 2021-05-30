@@ -51,7 +51,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Tidak ada yang ditemukan.\n\nCoba kata kunci lain atau mungkin cobalah mengejanya dengan benar."
+            "❌ Tidak ada yang dapat ditemukan.\n\nCoba kata kunci lain atau mungkin cobalah mengejanya dengan benar."
         )
         print(str(e))
         return
@@ -251,10 +251,10 @@ def time_to_seconds(time):
 async def jssong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/saavn requires an argument.")
+        await message.reply_text("/saavn membutuhkan argumen.")
         return
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
         return
     is_downloading = True
     text = message.text.split(None, 1)[1]
@@ -287,10 +287,10 @@ async def jssong(_, message):
 async def deezsong(_, message):
     global is_downloading
     if len(message.command) < 2:
-        await message.reply_text("/deezer requires an argument.")
+        await message.reply_text("/deezer membutuhkan argumen.")
         return
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
         return
     is_downloading = True
     text = message.text.split(None, 1)[1]
@@ -319,7 +319,7 @@ async def deezsong(_, message):
 async def ytmusic(client,message: Message):
     global is_downloading
     if is_downloading:
-        await message.reply_text("Another download is in progress, try again after sometime.")
+        await message.reply_text("Unduhan lain sedang berlangsung, coba lagi nanti.")
         return
 
     urlissed = get_text(message)
@@ -364,7 +364,7 @@ async def ytmusic(client,message: Message):
 
             if duration > 8:
                 await pablo.edit(
-                    f"❌ Video berdurasi lebih dari 8 menit tidak diperbolehkan, video yang disediakan adalah {duration} minute(s)"
+                    f"❌ Video berdurasi lebih dari 8 menit tidak diperbolehkan, video yang disediakan adalah {duration} menit"
                 )
                 is_downloading = False
                 return
