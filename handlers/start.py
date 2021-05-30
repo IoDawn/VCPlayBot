@@ -22,23 +22,20 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🌍 Music World", url="https://t.me/GIRLS_AND_BOYS_CHATTING",
+                        "🔊 Support Channel", url="https://t.me/arunasupportbot",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "🧑‍💻 Contact me", url="https://t.me/assistenpokonya_bot"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
-                    ),
-                    InlineKeyboardButton(
-                        "💾 Source code", url="https://github.com/QueenArzoo/VCPlayBot"
+                        "🤖 Other bot", url="https://t.me/MrsRoso_bot"
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/VCPlayBot?startgroup=true"
+                        "🍺 Add Roso To Your Group", url="https://t.me/MisRoso_bot?startgroup=true"
                     ) 
                 ]
             ]
@@ -57,10 +54,10 @@ async def start(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "Support 📢", url="https://t.me/arunasupportbot"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "Help ❔", url="https://t.me/assistenpokonya_bot"
                     )
                 ],    
                 [    
