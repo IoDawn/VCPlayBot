@@ -13,7 +13,7 @@ async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""<b>Hei {message.from_user.first_name}!
 \nSaya adalah *Roso* musik bot! Selain Strong dan berEnergi saya juga pandai bernyanyi,Saya dapat menyanyikan semua lagu yang anda pilih untuk obrolan grup anda♬
-\nSaat ini saya hanya tersedia untuk grup @AOO_ID hubungi [owner](https://t.me/assistenpokonya_bot) saya jika anda juga ingin mendengarkan saya bernyanyi!
+\nHubungi [Owner](https://t.me/assistenpokonya_bot) saya jika anda juga ingin mendengarkan saya bernyanyi!
 \nTekan /help untuk melihat daftar perintah.
  </b>""",
       
@@ -79,23 +79,23 @@ async def start(client: Client, message: Message):
 )
 async def help(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name}!
-\n/play <song name> - play song you requested
-/dplay <song name> - play song you requested via deezer
-/splay <song name> - play song you requested via jio saavn
-/playlist - Show now playing list
-/current - Show now playing
-/song <song name> - download songs you want quickly
-/search <query> - search videos on youtube with details
-/deezer <song name> - download songs you want quickly via deezer
-/saavn <song name> - download songs you want quickly via saavn
-/video <song name> - download videos you want quickly
-\n*Admins only*
-/player - open music player settings panel
-/pause - pause song play
-/resume - resume song play
-/skip - play next song
-/end - stop music play
+        f"""<b>Hei {message.from_user.first_name}!
+\n/play <judul lagu> - Menyanyikan lagu yang anda minta
+/dplay <judul lagu> - Memutar lagu yang anda minta melalui deezer
+/splay <judul lagu> - Menyuruh jio saavn untuk menyanyikan lagu yang anda minta
+/playlist - Menunjukkan daftar putar lagu
+/current - Menampilkan lagu yang sekarang sedang diputar
+/song <judul lagu> - unduh lagu yang anda inginkan dengan cepat
+/search <pertanyaan> - mencari detail video diyoutube
+/deezer <judul lagu> - unduh lagu yang kamu dengan cepat via deezer
+/saavn <judul lagu> - unduh lagu yang kamu inginkan dengan cepat via saavn
+/video <judul video> - unduh lagu yang kamu inginkan dengan cepat
+\n*Khusus Admin Grup*
+/player - buka panel pengaturan pemutar musik
+/pause - suruh Roso diam dulu
+/resume - suruh Roso lanjut nyanyi
+/skip - memutar lagu berikutnya
+/end - suruh Roso berhenti bernyanyi
 /userbotjoin - invite assistant to your chat
 /admincache - Refresh admin list
  </b>""",
@@ -103,10 +103,10 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/LaylaList"
+                        "🔊 Support", url="https://t.me/arunasupportbot"
                     ),
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/AwesomeSupport"
+                        "❔ Help", url="https://t.me/assistenpokonya_bot"
                     )
                 ]
             ]
