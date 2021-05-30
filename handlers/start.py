@@ -9,13 +9,12 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
     & ~ filters.edited
 )
 async def start_(client: Client, message: Message):
-    await message.reply_sticker("CAACAgUAAxkBAAIp9mBtwBBZGywWEmV-WC8gcMArjusuAAKMAgACTp1xV6m-mtC1YTfoHgQ")
+    await message.reply_sticker("CAACAgUAAxkBAAIkK2CzXewg1aRmhaabhXBJ-5EBSYJMAALEAwAC5ISYVR_otwhfP9zrHwQ")
     await message.reply_text(
-        f"""<b>Hi {message.from_user.first_name}!
-\nI can play music in your group's voice chat
-Maintained by @HEROGAMERS1 ❤
-\nTo add in your group contact us at @AwesomeSupport.
-\nHit /help list of available commands.
+        f"""<b>Hei {message.from_user.first_name}!
+\nSaya adalah *Roso* musik bot! Selain Strong dan berEnergi saya juga pandai bernyanyi,Saya dapat menyanyikan semua lagu yang anda pilih untuk obrolan grup anda♬
+\nSaat ini saya hanya tersedia untuk grup @AOO_ID hubungi [owner](https://t.me/assistenpokonya_bot) saya jika anda juga ingin mendengarkan saya bernyanyi!
+\nTekan /help untuk melihat daftar perintah.
  </b>""",
       
        
